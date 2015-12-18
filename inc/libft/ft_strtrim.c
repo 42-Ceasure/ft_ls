@@ -6,7 +6,7 @@
 /*   By: cglavieu <cglavieu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 20:31:19 by cglavieu          #+#    #+#             */
-/*   Updated: 2015/12/18 20:23:36 by cglavieu         ###   ########.fr       */
+/*   Updated: 2015/12/18 20:27:55 by cglavieu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_strtrim(char const *s)
 	while (len && ft_isspace(s[len]))
 		len--;
 	if (len < i)
-		return (ft_strdup (""));
+		return (ft_strdup(""));
 	return (ft_strsub(s, i, len - (size_t)i + 1));
 }
